@@ -8,7 +8,10 @@
 }
 
 /* shared styles  start */
-
+.content-width {
+  max-width: 763px;
+  margin: 0 auto;
+}
 /* shared styles end */
 
 /* banner section start */
@@ -21,11 +24,13 @@
   max-width: 763px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   gap: 51px;
 }
 .banner-content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .banner-title {
   color: #272727;
@@ -64,10 +69,97 @@
 }
 .banner-img {
   width: 50%;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .banner-img img {
-  width: 336px;
-  height: 424px;
+  width: 100%;
+  height: 100%;
 }
 /* banner section end */
+
+/* featured flowers section start */
+.featured-flowers {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.featured-text {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+.featured-title {
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.featured-description {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 24px;
+}
+.featured-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.first-img,
+.second-img,
+.third-img {
+  width: 33%;
+  height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% 50% 0 0;
+}
+.first-img img,
+.second-img img,
+.third-img img {
+  width: 100%;
+  height: 100%;
+  padding: 83px 35px 0 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#one {
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(167, 33, 98, 0.15);
+}
+#two {
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(5, 151, 160, 0.15);
+}
+#three {
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(71, 125, 17, 0.15);
+}
+.featured-images-text {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 22px;
+}
+.featured-images-text {
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 145.833% */
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+/* featured flowers section end */
